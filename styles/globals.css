@@ -53,6 +53,28 @@ footer {
   border: 1px solid #01d293 !important;
 }
 
+.primary_btn a {
+  text-decoration: none;
+  color: #01d293;
+  background: transparent !important;
+}
+
+.secondary_btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 7px 25px;
+}
+
+.secondary_btn a {
+  color: #01d293;
+}
+
+.primary_btn a:hover,
+.secondary_btn a:hover {
+  color: unset;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
