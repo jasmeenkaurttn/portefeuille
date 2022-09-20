@@ -1,0 +1,10 @@
+.footer_creator {
+  position: absolute;
+  right: 7rem;
+}
+.footer_creator h6 {
+  text-align: center;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.852);
+  border-top: 1px solid #808dad49;
+}
