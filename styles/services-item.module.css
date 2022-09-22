@@ -1,0 +1,45 @@
+.services_item {
+  background: #171f38;
+  padding: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  transition: .3s;
+}
+.services_item:hover {
+  background: #01d293;
+  cursor: pointer;
+  transform: translateY(-20px);
+}
+
+.services_item:hover i {
+  color: #171f38;
+}
+
+.services_item:hover h5 {
+  color: #171f38;
+}
+
+.services_item span,
+.services_item h5,
+.services_item span i {
+  background: transparent !important;
+}
+
+.services_item span i {
+  font-size: 3rem;
+  color: #01d293;
+}
+
+.services_item h5 {
+  font-size: 1rem;
+}
+
+.services_item:first-child {
+  border-radius: 10px 0px 10px 10px;
+}
+
+.services_item:last-child {
+  border-radius: 10px 10px 0px 10px;
+}
