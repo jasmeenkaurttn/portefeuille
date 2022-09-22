@@ -1,0 +1,74 @@
+.mySelf {
+  padding-top: 60px !important;
+}
+
+.myIntro {
+  padding-top: 50px;
+}
+.myIntro h5 {
+  color: #808dad;
+  font-weight: 400;
+}
+
+.myImage {
+  position: relative;
+  z-index: 9;
+}
+.myImage img{
+  border-radius: 50px 5px 5px 5px;
+}
+
+.mySkills {
+  text-align: left;
+  width: 130px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  background: #808dad28;
+  z-index: 10;
+}
+
+.mySkills h6 {
+  background: transparent;
+  color: #fff;
+}
+
+.mySkills span  i {
+  color: #01d293;
+  background: transparent;
+}
+
+.mySkills span {
+  background: transparent;
+}
+
+.myExperience {
+  width: 150px;
+  position: absolute;
+  bottom: -10%;
+  right: -5%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #808dad28;
+  z-index: 10;
+}
+
+.myExperience span, .myExperience h5, .myExperience h6 {
+  background-color: transparent !important;
+}
+
+.myExperience h6 {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.myExperience span i {
+  padding: 5px;
+  color: #02d293;
+  background: #808dad70;
+  border-radius: 5px;
+}

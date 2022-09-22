@@ -1,6 +1,10 @@
+import { Fragment } from 'react'
+import Hero from '../components/UI/Hero'
+
 export default function Home() {
   return (
-    <h1>Portfolio</h1>
+    <Fragment>
+      <Hero />
+    </Fragment>
   )
 }
- 

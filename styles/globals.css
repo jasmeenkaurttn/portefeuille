@@ -49,8 +49,9 @@ footer {
 
 .primary_btn {
   background: #171f38 !important;
-  padding: 7px 20px !important;
+  padding: 7px 25px !important;
   border: 1px solid #01d293 !important;
+  border-radius: 5px;
 }
 
 .primary_btn a {
@@ -67,12 +68,12 @@ footer {
 }
 
 .secondary_btn a {
-  color: #01d293;
+  color: #01d293 !important;
 }
 
 .primary_btn a:hover,
 .secondary_btn a:hover {
-  color: unset;
+  color: #01d293;
 }
 
 @media (prefers-color-scheme: dark) {

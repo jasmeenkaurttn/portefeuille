@@ -34,7 +34,7 @@ const Header = () => {
         {/* ======== navigation logo ==============m*/}
         <div className={`${classes.logo}`}>
           {/* <h1><span>J</span>asmeen <span>K</span>aur</h1> */}
-          <h1><span>Jasmeen</span> <span></span>Kaur</h1>
+          <h1><span>P</span>ortefeuille</h1>
         </div>
 
 
