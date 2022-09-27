@@ -87,3 +87,12 @@ footer {
   }
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background: #808dad;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background: #171f38;
+}

@@ -39,7 +39,7 @@ const Header = () => {
 
 
         {/* ====== nav menu ============ */}
-        <div className={`${classes.naigation}`}>
+        <div className={`${classes.navigation}`}>
           <div className={`${classes.nav_menu}`}>
             {NAV__LINK.map((item, index) => (
               <Link href={item.path} key={index}>{item.display}</Link>
