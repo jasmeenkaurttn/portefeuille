@@ -4,6 +4,7 @@ import Services from '../components/UI/Services'
 import About from '../components/UI/About'
 import Portfolio from '../components/UI/Portfolio'
 import Testimonial from '../components/UI/Testimonial'
+import Contact from '../components/UI/Contact'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Portfolio />
       <Testimonial />
+      <Contact />
     </Fragment>
   )
 }

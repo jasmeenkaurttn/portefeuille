@@ -47,6 +47,10 @@
   color: #01d293;
 }
 
+.portfolio_btn a i {
+  background: transparent;
+}
+
 .portfolio_icon {
   background: #171f38;
 }
