@@ -1,5 +1,5 @@
 .contact {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .contact h2 {
@@ -39,4 +39,13 @@
   color: #808dad !important;
   font-size: 1.3rem !important;
   cursor: pointer;
+  outline: none;
+}
+
+.social_links a i {
+  outline: none;
+}
+
+.contact_img {
+  align-items: center;
 }

@@ -2,7 +2,9 @@ import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import Link from "next/link"
 import SectionSubtitle from './SectionSubtitle'
+import Image from "next/image"
 import classes from '../../styles/contact.module.css'
+import contactImg from '../../public/images/contact.png'
 
 const Contact = () => {
   return <section id="contact" className={`${classes.contact}`}>
@@ -26,24 +28,41 @@ const Contact = () => {
             </li>
             <li className={`${classes.contact_info_item}`}>
               <span>
-              <i className="ri-mail-line"></i>
+                <i className="ri-mail-line"></i>
               </span>
-              <p>jasmeen2000@gmail.com</p>
+              <p>jasmeen7202@gmail.com</p>
             </li>
             <li className={`${classes.contact_info_item}`}>
               <span>
-              <i className="ri-phone-line"></i>
+                <i className="ri-phone-line"></i>
               </span>
               <p>+919718028724</p>
             </li>
           </ul>
 
           <div className={`${classes.social_links}`}>
-            <Link href='#'><i className="ri-github-fill"></i></Link>
-            <Link href='#'><i className="ri-facebook-box-fill"></i></Link>
-            <Link href='#'><i className="ri-linkedin-box-fill"></i></Link>
-            <Link href='#'><i className="ri-instagram-line"></i></Link>
+            <Link href='https://github.com/jasmeenkaurttn' passHref>
+              <a target="_blank">
+                <i className="ri-github-fill"></i>
+              </a>
+            </Link>
+
+            <Link href='https://leetcode.com/jasmeen7202/' passHref>
+              <a target="_blank">
+                <i class="ri-code-fill"></i>
+              </a>
+            </Link>
+
+            <Link href='https://www.linkedin.com/in/jasmeen-kaur-1b0b57201' passHref>
+              <a target="_blank">
+              <i className="ri-linkedin-box-fill"></i>
+              </a>
+              </Link>
           </div>
+        </Col>
+
+        <Col lg='6' md='6' className='contact_img'>
+          <Image alt="contact-me" src={contactImg} />
         </Col>
       </Row>
     </Container>
