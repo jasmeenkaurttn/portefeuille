@@ -7,7 +7,7 @@ const PortfolioItem = (props) => {
   const { title, img, githubUrl, keyword } = props.item
   return (
     <div className={`${classes.portfolio_item}`}>
-      <div>
+      <div className='bg-transparent'>
         <h6>{title}</h6>
         {
           keyword.map((item, index) => (
@@ -19,12 +19,18 @@ const PortfolioItem = (props) => {
       </div>
 
       <div className={`${classes.portfolio_img}`}>
-        <Image alt="portfolio-img" src={img} width='380' height='250'/>
+        <Image alt="portfolio-img" src={img} width='380' height='250' />
       </div>
 
-      <div className={`${classes.portfolio_url}`}>
-        <button className='primary_btn'>
-          <Link href={githubUrl}><i className="ri-link-m"></i></Link>
+      <div className={`${classes.portfolio_url} bg-transparent`}>
+        <button className={`${classes.portfolio_btn} primary_btn`}>
+          {/* we can use passHref (which just passes the href to the immediate child) */}
+
+          <Link href={githubUrl} passHref>
+            <a target="_blank">
+              <i className="ri-link-m ri-lg"></i>
+            </a>
+          </Link>
         </button>
       </div>
     </div>

@@ -42,3 +42,5 @@ const portfolio = [
     githubUrl: "https://github.com/jasmeenkaurttn/Bootcamp-Projects/tree/master",
   }
 ]
+
+export default portfolio;
