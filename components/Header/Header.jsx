@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import { Container } from "reactstrap"
 import classes from './header.module.css'
 import Link from "next/link"
@@ -27,7 +27,28 @@ const NAV__LINK = [
 ]
 
 const Header = () => {
-  return <header className={`${classes.header}`}>
+
+  const headerRef = useRef(null);
+
+  const menuRef = useRef(null);
+
+  const headerFunc = () => {
+    // sticky navigation
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      headerRef.current.classList.add(`${classes.header_shrink}`)
+    } else {
+      headerRef.current.classList.remove(`${classes.header_shrink}`)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', headerFunc)
+
+    return () => window.removeEventListener('scroll', headerFunc)
+  }, [])
+
+  const toggleMenu = () => menuRef.current.classList.toggle(`${classes.menu_active}`)
+  return <header className={`${classes.header}`} ref={headerRef}>
     <Container>
       <div className={`${classes.nav_wrapper}`}>
 
@@ -39,10 +60,16 @@ const Header = () => {
 
 
         {/* ====== nav menu ============ */}
-        <div className={`${classes.navigation}`}>
+        <div
+          className={`${classes.navigation}`}
+          ref={menuRef}
+          onClick={toggleMenu}
+        >
           <div className={`${classes.nav_menu}`}>
             {NAV__LINK.map((item, index) => (
-              <Link href={item.path} key={index}>{item.display}</Link>
+              <Link href={item.path} key={index}>
+                {item.display}
+              </Link>
             ))}
 
             <div className={`${classes.nav_right}`}>
@@ -53,6 +80,10 @@ const Header = () => {
             </div>
           </div>
         </div>
+
+        <span className={`${classes.mobile_menu}`}>
+          <i className="ri-menu-line" onClick={toggleMenu}></i>
+        </span>
       </div>
     </Container>
   </header>

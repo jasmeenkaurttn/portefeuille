@@ -10,7 +10,7 @@ const portfolio = [
     id: "02",
     title: "CRUD Operations using Next js",
     img: "/images/portfolio-02.jpg",
-    keyword: ["Next.js", "Jsonplaceholder API"],
+    keyword: ["Next.js", "JsonplaceholderAPI"],
     githubUrl: "https://github.com/jasmeenkaurttn/next-js-basic",
   },
   {
@@ -38,7 +38,7 @@ const portfolio = [
     id: "06",
     title: "Sailor - A basic webpage",
     img: "/images/portfolio-06.png",
-    keyword: ["Web-Design", "HTML", "CSS"],
+    keyword: ["HTML", "CSS", "JS"],
     githubUrl: "https://github.com/jasmeenkaurttn/Bootcamp-Projects/tree/master",
   }
 ]

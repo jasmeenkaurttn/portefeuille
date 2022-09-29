@@ -49,7 +49,7 @@ const Contact = () => {
 
             <Link href='https://leetcode.com/jasmeen7202/' passHref>
               <a target="_blank">
-                <i class="ri-code-fill"></i>
+                <i className="ri-code-fill"></i>
               </a>
             </Link>
 
@@ -61,7 +61,7 @@ const Contact = () => {
           </div>
         </Col>
 
-        <Col lg='6' md='6' className='contact_img'>
+        <Col lg='6' md='6' className={`${classes.contact_img}`}>
           <Image alt="contact-me" src={contactImg} />
         </Col>
       </Row>

@@ -5,6 +5,7 @@
 .myIntro {
   padding-top: 50px;
 }
+
 .myIntro h5 {
   color: #808dad;
   font-weight: 400;
@@ -14,7 +15,8 @@
   position: relative;
   z-index: 9;
 }
-.myImage img{
+
+.myImage img {
   border-radius: 50px 5px 5px 5px;
 }
 
@@ -36,7 +38,7 @@
   color: #fff;
 }
 
-.mySkills span  i {
+.mySkills span i {
   color: #01d293;
   background: transparent;
 }
@@ -56,7 +58,9 @@
   z-index: 10;
 }
 
-.myExperience span, .myExperience h5, .myExperience h6 {
+.myExperience span,
+.myExperience h5,
+.myExperience h6 {
   background-color: transparent !important;
 }
 
@@ -71,4 +75,78 @@
   color: #02d293;
   background: #808dad70;
   border-radius: 5px;
+}
+
+@media only screen and (max-width:992px) {
+  .myIntro h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .myIntro h5 {
+    font-size: 1.1rem !important;
+  }
+
+  .myImage img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .myIntro {
+    padding-top: 0;
+  }
+
+  .mySkills {
+    padding: 10px;
+    width: 90px;
+    left: 5%;
+  }
+
+  .mySkills h6,
+  .mySkills span i {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+
+  .myExperience {
+    padding: 10px;
+    width: 115px;
+
+  }
+
+  .myExperience h6 {
+    font-size: 0.7rem;
+  }
+
+  .myExperience h5 {
+    font-size: 0.9rem;
+  }
+
+  .myExperience span i {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .myImage {
+    text-align: center !important;
+    margin-top: 50px;
+  }
+
+  .mySkills {
+    left: 15%;
+  }
+
+  .myExperience {
+    right: 20%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .mySkills {
+    display: none;
+  }
+
+  .myExperience {
+    display: none !important;
+  }
 }

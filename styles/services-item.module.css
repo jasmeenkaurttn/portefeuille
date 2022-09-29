@@ -43,3 +43,15 @@
 .services_item:last-child {
   border-radius: 10px 10px 0px 10px;
 }
+
+@media only screen and (max-width:992px) {
+  .services_item {
+    padding: 20px;
+  }
+  .services_item span i {
+    font-size: 2rem;
+  }
+  .services_item h5 {
+    font-size: 0.9rem;
+  }
+}

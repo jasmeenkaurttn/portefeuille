@@ -17,7 +17,7 @@ const Services = () => {
             <ServicesItem title='Full Stack Developemnt' icon='ri-code-s-slash-line' />
           </div>
         </Col>
-        <Col lg='6' md='6'>
+        <Col lg='6' md='6' className={`${classes.services_title}`}>
           <SectionSubtitle subtitle='What I do'/>
           <h3 className='mb-0 mt-4'>Better Design</h3>
           <h3 className='mb-0'>Better Experience</h3>

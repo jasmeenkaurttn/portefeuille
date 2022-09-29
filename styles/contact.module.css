@@ -49,3 +49,9 @@
 .contact_img {
   align-items: center;
 }
+
+@media only screen and (max-width:768px){
+  .social_links {
+    margin-bottom: 30px;
+  }
+}

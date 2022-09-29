@@ -96,3 +96,24 @@ footer {
   border-radius: 2em;
   background: #171f38;
 }
+
+@media only screen and (max-width:992px) {
+  p {
+    font-size: 0.9rem !important;
+  }
+
+  .primary_btn a,
+  .secondary_btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  section {
+    padding-top: 110px;
+  }
+  footer {
+    padding-top: 0;
+    border: none;
+  }
+}

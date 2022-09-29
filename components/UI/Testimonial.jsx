@@ -21,7 +21,7 @@ const Testimonial = () => {
   return <section>
     <Container>
       <Row>
-        <Col lg='6' md='6'>
+        <Col lg='6' md='6' className={`${classes.testimonial_img}`}>
           <Image alt='network-img' src={network} width='400' height='400' />
         </Col>
 

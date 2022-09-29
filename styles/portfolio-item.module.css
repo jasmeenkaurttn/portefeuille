@@ -54,3 +54,9 @@
 .portfolio_icon {
   background: #171f38;
 }
+
+@media only screen and (max-width:576px){
+  .portfolio_img img {
+    width: 100% !important;
+  }
+}

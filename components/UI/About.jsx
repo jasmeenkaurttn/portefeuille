@@ -13,10 +13,10 @@ import img05 from '../../public/images/img05.jpg'
 import classes from '../../styles/about.module.css'
 
 const About = () => {
-  return <section>
+  return <section id='about'>
     <Container>
       <Row>
-        <Col lg='6' md='6'>
+        <Col lg='6' className={`${classes.about_content}`}>
           <SectionSubtitle subtitle='About me' />
           <h3 className='mt-4'>I&apos;m a Software Engineer at TTN</h3>
           {/* <h3></h3> */}
@@ -66,8 +66,8 @@ const About = () => {
           </div>
         </Col>
 
-        <Col lg='6' md='6'>
-          <div className='d-flex gap-4 justify-content-end'>
+        <Col lg='6'>
+          <div className={`${classes.about_image_gallery} d-flex gap-4 justify-content-end`}>
 
             <div className='d-flex flex-column mb-3'>
               <div className={`${classes.about_image} ${classes.about_image_box}`}>

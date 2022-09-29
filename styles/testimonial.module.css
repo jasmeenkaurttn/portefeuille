@@ -15,3 +15,15 @@
 .testimonial_client h6:last-child {
   color: #01d293;
 }
+
+@media only screen and (max-width:768px){
+  .testimonial_img img{
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .testimonial_img {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
